@@ -1,0 +1,9 @@
+variables:
+  GIT_STRATEGY: clone
+  GIT_SUBMODULE_STRATEGY: none
+jobs:
+   script:
+     - bash /home/gitlab-runner/bin/gitlab-local.sh
+   artifacts:
+    paths:
+     - ./tests/_output

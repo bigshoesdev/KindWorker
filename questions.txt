@@ -1,0 +1,61 @@
+1.
+Login										
+url	api/user/login									
+param	username									
+	password									
+	device_token			push notification을 보내기 위한 token이다. 앱에서 올려보낼것이다.						
+	device_id			장치형태를 나타낸다. 실례로 0이면 아이폰, 1이면 안드로이드						
+
+
+tbl_category
+	-state_id
+		const STATE_INACTIVE = 0;
+		const STATE_ACTIVE = 1;
+		const STATE_DELETED = 2;
+	-type_id
+		const LOCAL_SERVICE=0;
+		const ONLINE_SERIVICE=1;
+
+tbl_subcategory
+	-state_id
+		const STATE_INACTIVE = 0;
+		const STATE_ACTIVE = 1;
+		const STATE_DELETED = 2;
+	-type_id
+		No Need
+
+
+tbl_user
+	-activation_key
+	?
+	-is_fill
+	?
+	-strip_customer_id
+	?
+	-contact_no
+	?
+	-is_service
+	?	
+(Unused)
+	tbl_user_portfolio
+
+tbl_auth_session
+	-device_token
+	-type_id
+
+
+tbl_job
+	-job_type
+	const JOB_TYPE_BOOOKED = 0;
+	const JOB_TYPE_CUSTOM = 1;(Jobs Page(Jobs why custom?))
+	-type
+	const TYPE_LOCAL = 0;
+	const TYPE_REMOTE = 1;
+
+	-What is Booked Worker?
+
+
+?????Send Notification is not implemented
+
+
+?????Slot는 무엇을 위한것인가?
